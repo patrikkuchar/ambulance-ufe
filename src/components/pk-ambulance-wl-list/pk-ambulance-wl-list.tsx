@@ -26,6 +26,13 @@ export class PkAmbulanceWlList {
         estimatedDurationMinutes: 20,
         condition: 'Teploty'
       }, {
+        name: 'Mgr. Test Priezvisko',
+        patientId: '10061',
+        since: new Date(Date.now() - 30 * 60).toISOString(),
+        estimatedStart: new Date(Date.now() + 30 * 60).toISOString(),
+        estimatedDurationMinutes: 11,
+        condition: 'Teploty'
+      },{
         name: 'Ing. Ferdinand Trety',
         patientId: '10028',
         since: new Date(Date.now() - 72 * 60).toISOString(),
