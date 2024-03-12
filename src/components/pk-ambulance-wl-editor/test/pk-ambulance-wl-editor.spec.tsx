@@ -69,7 +69,7 @@ import { Condition, WaitingListEntry } from '../../../api/ambulance-wl';
 
       const page = await newSpecPage({
         components: [PkAmbulanceWlEditor],
-        html: `<<pfx>-ambulance-wl-editor entry-id="test-entry" ambulance-id="test-ambulance" api-base="http://sample.test/api"></<pfx>-ambulance-wl-editor>`,
+        html: `<pk-ambulance-wl-editor entry-id="test-entry" ambulance-id="test-ambulance" api-base="http://sample.test/api"></pk-ambulance-wl-editor>`,
       });
       let items: any = await page.root.shadowRoot.querySelectorAll("md-filled-text-field");
 
