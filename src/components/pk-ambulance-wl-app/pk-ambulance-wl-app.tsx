@@ -56,7 +56,8 @@ export class PkAmbulanceWlApp {
       <Host>
         { element === "editor"
           ? <pk-ambulance-wl-editor entry-id={entryId}
-          oneditor-closed={ () => navigate("./list")}>
+                                    ambulance-id={this.ambulanceId} api-base={this.apiBase}
+                                    oneditor-closed={ () => navigate("./list")}>
           </pk-ambulance-wl-editor>
           : <pk-ambulance-wl-list ambulance-id={this.ambulanceId} api-base={this.apiBase}
             onentry-clicked={ (ev: CustomEvent<string>)=> navigate("./entry/" + ev.detail) }></pk-ambulance-wl-list>
