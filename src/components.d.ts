@@ -21,12 +21,16 @@ export namespace Components {
         "middle": string;
     }
     interface PkAmbulanceWlApp {
+        "ambulanceId": string;
+        "apiBase": string;
         "basePath": string;
     }
     interface PkAmbulanceWlEditor {
         "entryId": string;
     }
     interface PkAmbulanceWlList {
+        "ambulanceId": string;
+        "apiBase": string;
     }
 }
 export interface PkAmbulanceWlEditorCustomEvent<T> extends CustomEvent<T> {
@@ -107,6 +111,8 @@ declare namespace LocalJSX {
         "middle"?: string;
     }
     interface PkAmbulanceWlApp {
+        "ambulanceId"?: string;
+        "apiBase"?: string;
         "basePath"?: string;
     }
     interface PkAmbulanceWlEditor {
@@ -114,6 +120,8 @@ declare namespace LocalJSX {
         "onEditor-closed"?: (event: PkAmbulanceWlEditorCustomEvent<string>) => void;
     }
     interface PkAmbulanceWlList {
+        "ambulanceId"?: string;
+        "apiBase"?: string;
         "onEntry-clicked"?: (event: PkAmbulanceWlListCustomEvent<string>) => void;
     }
     interface IntrinsicElements {
